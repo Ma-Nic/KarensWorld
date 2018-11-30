@@ -15,58 +15,63 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="509.0" prefWidth="712.0" VBox.vgrow="ALWAYS">
-      <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="640.0">
-               <fill>
-                  <RadialGradient centerX="0.8833333333333333" centerY="0.8571428571428572" radius="0.7558139534883721">
-                     <stops>
-                        <Stop color="#2e8615" />
-                        <Stop color="#d6ffa4" offset="1.0" />
-                     </stops>
-                  </RadialGradient>
-               </fill>
-            </Rectangle>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="62.0" layoutX="501.0" layoutY="326.0" stroke="BLACK" strokeType="INSIDE" width="125.0">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0" startX="0.18095238095238095">
-                     <stops>
-                        <Stop color="#4d941d" />
-                        <Stop color="#66e444" offset="1.0" />
-                     </stops>
-                  </LinearGradient>
-               </fill>
-            </Rectangle>
-            <ImageView fx:id="imageView" fitHeight="372.0" fitWidth="450.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="ForwardButton" contentDisplay="CENTER" layoutX="532.0" layoutY="331.0" mnemonicParsing="false" onAction="#pressForwardButton" text="Forward" />
-            <Button fx:id="RightButton" contentDisplay="CENTER" layoutX="564.0" layoutY="358.0" mnemonicParsing="false" onAction="#pressRightButton" text="Right">
-               <padding>
-                  <Insets bottom="4.0" left="15.0" right="15.0" top="4.0" />
-               </padding>
-            </Button>
-            <Button fx:id="LeftButton" contentDisplay="CENTER" layoutX="504.0" layoutY="358.0" mnemonicParsing="false" onAction="#pressLeftButton" text="Left">
-               <padding>
-                  <Insets bottom="4.0" left="18.0" right="18.0" top="4.0" />
-               </padding>
-            </Button>
-            <Button fx:id="PickUpButton" layoutX="494.0" layoutY="190.0" mnemonicParsing="false" onAction="#pressPickUpButton" text="Pick Up" />
-            <Button fx:id="PutDownButton" layoutX="554.0" layoutY="190.0" mnemonicParsing="false" onAction="#pressButton" text="Put Down" />
-            <TextField fx:id="MessageField" layoutX="75.0" layoutY="2.0" prefHeight="25.0" prefWidth="381.0" />
-            <MenuBar fx:id="ICWorld" layoutY="2.0">
-              <menus>
-                <Menu mnemonicParsing="false" text="ICWorld">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="World 1" />
-                        <MenuItem mnemonicParsing="false" text="World 2" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-            <ChoiceBox fx:id="ItemsCarried" layoutX="456.0" layoutY="2.0" prefHeight="25.0" prefWidth="182.0" />
-            <ImageView fx:id="itemView" fitHeight="153.0" fitWidth="176.0" layoutX="459.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
-      </children>
-    </AnchorPane>
-  </children>
-</VBox>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="640.0">
+        <children>
+          <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="509.0" prefWidth="712.0" VBox.vgrow="ALWAYS">
+            <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="640.0">
+                     <fill>
+                        <RadialGradient centerX="0.8833333333333333" centerY="0.8571428571428572" radius="0.7558139534883721">
+                           <stops>
+                              <Stop color="#2e8615" />
+                              <Stop color="#d6ffa4" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Rectangle>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="62.0" layoutX="501.0" layoutY="326.0" stroke="BLACK" strokeType="INSIDE" width="125.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.18095238095238095">
+                           <stops>
+                              <Stop color="#4d941d" />
+                              <Stop color="#66e444" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <ImageView fx:id="imageView" fitHeight="372.0" fitWidth="450.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="ForwardButton" contentDisplay="CENTER" layoutX="532.0" layoutY="331.0" mnemonicParsing="false" onAction="#pressForwardButton" text="Forward" />
+                  <Button fx:id="RightButton" contentDisplay="CENTER" layoutX="564.0" layoutY="358.0" mnemonicParsing="false" onAction="#pressRightButton" text="Right">
+                     <padding>
+                        <Insets bottom="4.0" left="15.0" right="15.0" top="4.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="LeftButton" contentDisplay="CENTER" layoutX="504.0" layoutY="358.0" mnemonicParsing="false" onAction="#pressLeftButton" text="Left">
+                     <padding>
+                        <Insets bottom="4.0" left="18.0" right="18.0" top="4.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="PickUpButton" layoutX="494.0" layoutY="190.0" mnemonicParsing="false" onAction="#pressPickUpButton" text="Pick Up" />
+                  <Button fx:id="PutDownButton" layoutX="554.0" layoutY="190.0" mnemonicParsing="false" onAction="#pressButton" text="Put Down" />
+                  <TextField fx:id="MessageField" layoutX="75.0" layoutY="2.0" prefHeight="25.0" prefWidth="381.0" />
+                  <MenuBar fx:id="ICWorld" layoutY="2.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="ICWorld">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="World 1" />
+                              <MenuItem mnemonicParsing="false" text="World 2" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <ChoiceBox fx:id="ItemsCarried" layoutX="456.0" layoutY="2.0" prefHeight="25.0" prefWidth="182.0" />
+                  <ImageView fx:id="itemView" fitHeight="153.0" fitWidth="176.0" layoutX="459.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+          </AnchorPane>
+        </children>
+      </VBox>
+   </children>
+</AnchorPane>
